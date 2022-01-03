@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+
+fetch('http://127.0.0.1:8000/api/books', {
+    method: "post",
+    headers: {
+        "Accept": "application/json",
+        'X-Requested-With': 'XMLHttpRequest',
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({id: 16, title: 'warming', author: 'sjhdgc', isbn:'12334',publisher:'bhutan2022'})
+})
+    .then(res => res.json())
+    .then(data => document.write(data))
+    .then(data => console.log(data))
+
+</script>
+</body>
+</html>
