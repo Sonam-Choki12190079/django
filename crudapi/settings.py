@@ -85,19 +85,19 @@ WSGI_APPLICATION = 'crudapi.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': BASE_DIR / 'db.sqlite3',
-    # }
-
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd6r1puvfr5edns',
-        'USER': 'dyulrjdkgcfqqn',
-        'PASSWORD': '556794112570ddb8b54a37b595f90f4b119dcbe7a9b8a2a7c3ac1bf097070c28',
-        'HOST': 'ec2-34-199-200-115.compute-1.amazonaws.com',
-        'PORT':  5432
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
+
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+    #     'NAME': 'd6r1puvfr5edns',
+    #     'USER': 'dyulrjdkgcfqqn',
+    #     'PASSWORD': '556794112570ddb8b54a37b595f90f4b119dcbe7a9b8a2a7c3ac1bf097070c28',
+    #     'HOST': 'ec2-34-199-200-115.compute-1.amazonaws.com',
+    #     'PORT':  5432
+    #}
 }
 
 
@@ -140,7 +140,7 @@ CORS_ORIGIN_ALLOW_ALL=True
 
 
 STATIC_URL = '/static/'
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static')),
 # django_heroku.settings(locals())
 # django_heroku.settings(locals(), staticfiles=False, allowed_hosts=False)
